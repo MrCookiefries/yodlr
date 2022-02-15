@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset=utf-8>
-  <title>Yodlr Design Challenge</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yodlr</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
-<body>
-  <h1>Yodlr Design Challenge</h1>
-  <p>
-    <a href="/signup.html">Registration Page</a><br/>
-    <a href="/admin.html">Admin Page</a>
-  </p>
+
+<body class="has-navbar-fixed-top">
+	<h1 class="title is-1 is-primary has-text-primary m-2">Yodlr Design Challenge</h1>
+	<!-- Nav bar -->
+	<nav class="navbar is-dark is-fixed-top">
+		<!-- Always shown -->
+		<div class="navbar-brand">
+			<!-- Home -->
+			<a href="./index.html" class="navbar-item is-underlined">Home</a>
+			<!-- Hamburger menu toggle -->
+			<a role="button" id="burger" class="navbar-burger" data-target="navbar-menu">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
+		<!-- Menu -->
+		<div id="navbar-menu" class="navbar-menu">
+			<!-- Left side -->
+			<div class="navbar-start">
+				<a href="./admin.html" class="navbar-item">Admin</a>
+			</div>
+			<!-- Right side -->
+			<div class="navbar-end">
+				<a href="./signup.html" class="navbar-item">Register</a>
+			</div>
+		</div>
+	</nav>
+	<script src="./js/nav.js"></script>
 </body>
+
 </html>

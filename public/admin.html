@@ -1,10 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset=utf-8>
-  <title>Yodlr Admin Page</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yodlr - Admin</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/admin.css">
 </head>
-<body>
-  List user data here
+
+<body class="has-navbar-fixed-top">
+	<h1 class="title is-1 is-primary has-text-primary m-2">Admin Panel</h1>
+	<div class="content has-background-dark">
+		<ul id="users" class="py-2"></ul>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js"
+		integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- Nav bar -->
+	<nav class="navbar is-dark is-fixed-top">
+		<!-- Always shown -->
+		<div class="navbar-brand">
+			<!-- Home -->
+			<a href="./index.html" class="navbar-item">Home</a>
+			<!-- Hamburger menu toggle -->
+			<a role="button" id="burger" class="navbar-burger" data-target="navbar-menu">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
+		<!-- Menu -->
+		<div id="navbar-menu" class="navbar-menu">
+			<!-- Left side -->
+			<div class="navbar-start">
+				<a href="./admin.html" class="navbar-item is-underlined">Admin</a>
+			</div>
+			<!-- Right side -->
+			<div class="navbar-end">
+				<a href="./signup.html" class="navbar-item">Register</a>
+			</div>
+		</div>
+	</nav>
+	<script src="./js/nav.js"></script>
+	<script src="./js/admin.js"></script>
 </body>
+
 </html>
